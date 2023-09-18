@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCB10AD72D94DC7DDB053D95 /* Pods_CocoaPodsTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E0C08230C82978F6DBF1AB /* Pods_CocoaPodsTutorial.framework */; };
 		CD278B502AB90EB30054713E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD278B4F2AB90EB30054713E /* AppDelegate.swift */; };
 		CD278B522AB90EB30054713E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD278B512AB90EB30054713E /* SceneDelegate.swift */; };
 		CD278B542AB90EB30054713E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD278B532AB90EB30054713E /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40E0C08230C82978F6DBF1AB /* Pods_CocoaPodsTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodsTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC55EB055764091777B2CD72 /* Pods-CocoaPodsTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsTutorial.release.xcconfig"; path = "Target Support Files/Pods-CocoaPodsTutorial/Pods-CocoaPodsTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		CD278B4C2AB90EB30054713E /* CocoaPodsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD278B4F2AB90EB30054713E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD278B512AB90EB30054713E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CD278B582AB90EB50054713E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD278B5B2AB90EB50054713E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD278B5D2AB90EB50054713E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C78FEF1638CBF53FDD3938 /* Pods-CocoaPodsTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsTutorial.debug.xcconfig"; path = "Target Support Files/Pods-CocoaPodsTutorial/Pods-CocoaPodsTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB10AD72D94DC7DDB053D95 /* Pods_CocoaPodsTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B8A8D7B43C97EE26DBC2B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3C78FEF1638CBF53FDD3938 /* Pods-CocoaPodsTutorial.debug.xcconfig */,
+				AC55EB055764091777B2CD72 /* Pods-CocoaPodsTutorial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		59FF5555803FC80EF063CC93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40E0C08230C82978F6DBF1AB /* Pods_CocoaPodsTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD278B432AB90EB30054713E = {
 			isa = PBXGroup;
 			children = (
 				CD278B4E2AB90EB30054713E /* CocoaPodsTutorial */,
 				CD278B4D2AB90EB30054713E /* Products */,
+				58B8A8D7B43C97EE26DBC2B5 /* Pods */,
+				59FF5555803FC80EF063CC93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD278B602AB90EB50054713E /* Build configuration list for PBXNativeTarget "CocoaPodsTutorial" */;
 			buildPhases = (
+				60B1509614E43F702360C862 /* [CP] Check Pods Manifest.lock */,
 				CD278B482AB90EB30054713E /* Sources */,
 				CD278B492AB90EB30054713E /* Frameworks */,
 				CD278B4A2AB90EB30054713E /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60B1509614E43F702360C862 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPodsTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD278B482AB90EB30054713E /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		CD278B612AB90EB50054713E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C78FEF1638CBF53FDD3938 /* Pods-CocoaPodsTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +361,7 @@
 		};
 		CD278B622AB90EB50054713E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC55EB055764091777B2CD72 /* Pods-CocoaPodsTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
